@@ -1,7 +1,7 @@
 # Tasklist
 A simple Flask app to keep track of what needs to get done!
 
-![Model](https://github.com/aeazy/flask-tasklist/blob/webpage.png?raw=true)
+![Home Page](blob/webpage.png)
 
 ## Installation
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install requirements
