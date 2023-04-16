@@ -1,0 +1,49 @@
+{% extends 'base.html' %} 
+
+{% block body %}
+
+<div class="header">
+  <a href="{{ url_for('tasks.index') }}">
+    <i class="bx bx-arrow-back"></i><h1>Back</h1>
+  </a>
+</div>
+
+<div class="content">
+  <div class="todo">
+    <h1>Completed Tasks</h1>
+
+    <div class="tasks">
+    
+    {% if completed_tasks|length < 1 %}
+
+    <h4>You have not completed any tasks yet!</h4>
+
+    
+    {% else %}
+    <table>
+      <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+
+      {% for completed_task in completed_tasks %}
+
+      <tr>
+        <td><a class="action" href="{{ url_for('tasks.undo', id=completed_task.task_id) }}" /><i class='bx bx-undo'></i></td>
+        <td> {{ completed_task.title }}</td>
+        <td>
+          <a class="action" href="{{ url_for('tasks.delete_forever', id=completed_task.task_id) }}" onclick="return confirm('Are you sure? This cannot be undone.');"><i class='bx bx-trash'></i></a>
+        </td>
+      </tr>
+
+      {% endfor %}
+
+    </table>
+
+    {% endif %}
+      </div>
+    </div>
+  </div>
+
+  {% endblock body %}

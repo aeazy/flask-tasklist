@@ -1,0 +1,317 @@
+html {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background-color: #000000;
+    color: #fff;
+}
+
+nav {
+    background-color: #1d1d1d;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+nav h1 {
+    margin: 0 auto;
+    display: inline;
+}
+
+.todo {
+    background-color: #1d1d1d;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 10px;
+}
+
+.todo h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+}
+
+.todo h4 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.todo a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #b0b0b0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.todo a:hover,
+i:hover {
+    color: #fff;
+}
+
+.todo i {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.link {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #b0b0b0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.todo form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: max-content;
+    margin: 10px auto;
+}
+
+.todo section {
+    margin: 0;
+    display: inline-block;
+    width: 85%;
+}
+
+.todo input {
+    background-color: #fff;
+    font-size: 24px;
+    border-radius: 5px;
+    border-style: none;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.todo input:last-child {
+    margin: 0;
+}
+
+.todo button {
+    background-color: #fff;
+    color: #1d1d1d;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    border: none;
+    border-style: none;
+}
+
+.tasks table {
+    margin: 10px auto;
+    max-width: 100%;
+    width: max-content;
+    text-align: left;
+    color: #b0b0b0;
+}
+
+.tasks th {
+    text-align: center;
+}
+
+.tasks td {
+    margin: 0;
+    padding: 10px;
+    font-size: 24px;
+    text-align: left;
+}
+
+.tasks td:first-child {
+    width: 10%;
+    text-align: center;
+    padding-right: 15px;
+}
+
+.tasks i {
+    margin: 0 auto;
+    color: #b0b0b0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.tasks a {
+    color: #b0b0b0;
+    display: block;
+    text-align: center;
+    line-height: 1;
+}
+
+.tasks a:hover, i:hover {
+    color: #fff;
+}
+
+.tasks {
+    display: block;
+}
+
+.tasks h2 {
+    color: #fff;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.tasks h3 {
+    color: #b0b0b0;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+
+.header {
+    margin-left: 10px;
+}
+
+.header a {
+    color: #b0b0b0;
+    text-decoration: none;
+}
+
+.header i {
+    font-size: 24px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.content {
+    margin: 10px;
+}
+
+.content a {
+    text-decoration: none;
+}
+
+.content section {
+    background-color: #1d1d1d;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.content h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 32px;
+    overflow-wrap: break-word;
+}
+
+.content p {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.content h2 {
+    margin: 0;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.content hr {
+    width: 60%;
+}
+
+section.delete {
+    background-color: #aa4d4d;
+    display: flex;
+    color: #b0b0b0;
+}
+
+.delete:hover {
+    background-color: red;
+    color: #fff;
+}
+
+.delete a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 auto;
+    color: #b0b0b0;
+    box-sizing: content-box;
+}
+
+.delete i {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 36px;
+    padding-right: 10px;
+    margin: 0 auto;
+}
+
+.form {
+    align-items: center;
+    height: max-content;
+}
+
+.form label {
+    font-size: 18px;
+    color: #b0b0b0;
+}
+
+.form input {
+    background-color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    border-style: none;
+    width: 100%;
+    margin: 5px 0;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.form textarea {
+    background-color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    border-style: none;
+    width: 100%;
+    margin: 5px 0;
+    padding: 0 5px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    resize: none;
+}
+
+.form input.button {
+    color: #b0b0b0;
+    background-color: #4eb94e88;
+    height: 50px;
+}
+
+.form input.button:hover {
+    background-color: #4eb94e;
+    color: #fff;
+}
+
+@media (min-width: 600px) {
+    .content {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .todo form {
+        width: 60%;
+    }
+
+    .header {
+        margin-left: 20px;
+    }
+}

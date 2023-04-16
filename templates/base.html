@@ -1,0 +1,18 @@
+<!DOCTYPE html> 
+<title>{% block title %}Tasklist{% endblock title %}</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+<nav>
+    <h1>{{ date_today }}</h1>
+</nav>
+
+{% block header %} {% endblock header %} 
+
+{% block body %}{% endblock body %}

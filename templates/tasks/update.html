@@ -1,0 +1,42 @@
+{% extends 'base.html' %} 
+
+{% block header %} {% endblock header %} 
+
+{% block body %}
+
+<div class="header">
+  <a href="{{ url_for('tasks.index') }}">
+    <i class="bx bx-arrow-back"></i><h1>Back</h1>
+  </a>
+</div>
+
+<div class="content">
+  <h2>Details</h2>
+  <section>
+    <h1>{{task.title}}</h1>
+    <hr />
+    <p>{{task.body}}</p>
+  </section>
+
+  <h2>Update task</h2>
+  <section>
+    <div class="form">
+      <form method="post">
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" value="{{ request.form['title'] or task.title }}" required />
+        <label for="body">Body</label>
+        <textarea name="body" id="body">{{ task.body }}</textarea>
+        <input type="submit" value="Update Task" class="button"/>
+      </form>
+    </div>
+  </section>
+
+  <a href="{{ url_for('tasks.delete', id=task.id) }}" onclick="return confirm('Are you sure?');">
+    <section class="delete">
+      <i class='bx bx-trash'></i>
+    </section>
+  </a>
+
+</div>
+
+{% endblock body %}
