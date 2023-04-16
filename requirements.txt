@@ -1,0 +1,4 @@
+flask
+click
+sqlite3
+werkzeug
